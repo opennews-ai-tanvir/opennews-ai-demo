@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="মানুষের যাচাই ও অনুমোদনে প্রকাশিত বাংলা সংবাদ">
+  <title>ওপেননিউজ এআই ডেমো</title>
+  <style>
+    *{box-sizing:border-box}:root{--navy:#0d2545;--blue:#1769aa;--sky:#eaf5ff;--ink:#172033;--muted:#667085;--line:#dde5ee;--paper:#f5f8fc}
+    body{margin:0;font-family:"Nirmala UI","Vrinda","Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}
+    .site-header{background:linear-gradient(135deg,#0d2545 0%,#154f82 100%);color:white}
+    .header-inner{width:min(1100px,calc(100% - 32px));margin:auto;padding:44px 0 38px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 12px;color:#bfe0ff;font-size:15px;font-weight:700}
+    .eyebrow:before{content:"";width:9px;height:9px;border-radius:50%;background:#46d39a;box-shadow:0 0 0 5px rgba(70,211,154,.15)}
+    h1{margin:0;font-size:clamp(34px,5vw,54px);line-height:1.12}.tagline{max-width:760px;margin:15px 0 0;color:#d8e9f8;font-size:19px;line-height:1.6}
+    .summary-bar{background:white;border-bottom:1px solid var(--line)}.summary-inner{width:min(1100px,calc(100% - 32px));margin:auto;padding:16px 0;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:15px}.summary-inner strong{color:var(--navy)}
+    main{width:min(1100px,calc(100% - 32px));margin:30px auto 60px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+    .news-card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px rgba(13,37,69,.06);display:flex;flex-direction:column;min-height:310px}
+    .card-topline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.category{display:inline-block;padding:6px 11px;border-radius:999px;color:var(--blue);background:var(--sky);font-size:14px;font-weight:800}.verified{color:#49725f;font-size:12px;font-weight:700}
+    .news-card h2{margin:0;color:var(--navy);font-size:27px;line-height:1.35}.news-card p{margin:15px 0 24px;color:#4c566a;font-size:17px;line-height:1.75}
+    .card-footer{margin-top:auto;padding-top:17px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}.source{color:var(--muted);font-size:14px}.card-footer a{color:var(--blue);font-size:15px;font-weight:800;text-decoration:none;white-space:nowrap}.card-footer a:hover{text-decoration:underline}
+    .empty-state{grid-column:1/-1;background:white;border:1px solid var(--line);border-radius:16px;padding:55px 30px;text-align:center}.site-footer{background:#0a1b31;color:#b8c8d9;text-align:center;padding:25px 16px;font-size:14px}.site-footer strong{color:white}
+    @media(max-width:780px){main{grid-template-columns:1fr}.summary-inner,.card-footer,.card-topline{align-items:flex-start;flex-direction:column}.news-card{min-height:auto}.card-footer a{white-space:normal}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">যাচাই করা বাংলা সংবাদ</p><h1>ওপেননিউজ এআই ডেমো</h1><p class="tagline">কৃত্রিম বুদ্ধিমত্তার সহায়তায় সংবাদ প্রস্তুত—প্রকাশের আগে প্রতিটি সংবাদ মানুষের যাচাই ও অনুমোদনপ্রাপ্ত।</p></div></header>
+  <section class="summary-bar"><div class="summary-inner"><strong>প্রকাশিত সংবাদ: 1টি</strong><span>স্বচ্ছতা • নির্ভরযোগ্য উৎস • মানবিক তত্ত্বাবধান</span></div></section>
+  <main><article class="news-card">
+          <div class="card-topline">
+            <span class="category">বাংলাদেশ</span>
+            <span class="verified">মানুষের যাচাইয়ে প্রকাশিত</span>
+          </div>
+          <h2>এশিয়ান গেমস ২০২৬: ব্যাডমিন্টনে বাংলাদেশের বিপক্ষে ভারতের জয়</h2>
+          <p>২০২৬ এশিয়ান গেমসের ব্যাডমিন্টন ইভেন্টে পুরুষ দলগত বিভাগে বাংলাদেশকে পরাজিত করেছে ভারত। এই জয়ের মাধ্যমে ভারত টুর্নামেন্টের কোয়ার্টার ফাইনালে জায়গা করে নিয়েছে।</p>
+          <div class="card-footer">
+            <span class="source">সূত্র: olympics.com</span>
+            <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOZFIyRS1uMGtVVF9kd0VvbWlwQWlCVS1FMDZiZ0FENnRPaUFzZURKUTVLbFRGVHBPZnplQnBmVlRFVk5ZT0lBblZ0bnBFRnBVNDZ4bTdrTURFVDF6ckt0eGJEc1BQYUt5QzgteHpHcEFmUWl2Uk9ZNVVTalJxdG9oZ3dPbEdnRV83ZlRpWmsyaUNJMVI1Mnc?oc=5" target="_blank" rel="noopener noreferrer">মূল সংবাদ দেখুন ↗</a>
+          </div>
+        </article></main>
+  <footer class="site-footer"><strong>ওপেননিউজ এআই ডেমো</strong> • মানুষের অনুমোদনে প্রকাশিত সংবাদ</footer>
+</body>
+</html>
