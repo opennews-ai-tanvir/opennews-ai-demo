@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="User Data Deletion Instructions for OpenNews AI MVP">
+  <title>Data Deletion Instructions | OpenNews AI MVP</title>
+  <style>
+    :root{--navy:#0d2545;--blue:#1769aa;--ink:#172033;--muted:#667085;--line:#dce5ee;--paper:#f4f7fb;--white:#fff;--green:#25735a;--orange:#b45309}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans",sans-serif;line-height:1.7}
+    header{background:linear-gradient(135deg,#0d2545,#1769aa);color:white;padding:54px 20px}.wrap{width:min(900px,calc(100% - 32px));margin:auto}
+    .eyebrow{margin:0 0 8px;color:#cbe8ff;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px}h1{margin:0;font-size:clamp(34px,6vw,52px);line-height:1.15}.subtitle{max-width:720px;margin:14px 0 0;color:#e4f2ff;font-size:18px}.meta{margin-top:20px;color:#dcecff;font-size:14px}
+    main{width:min(900px,calc(100% - 32px));margin:28px auto 50px}article{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:clamp(22px,5vw,42px);box-shadow:0 10px 32px rgba(13,37,69,.07)}
+    h2{color:var(--navy);margin:30px 0 9px;font-size:24px}h2:first-child{margin-top:0}p,li{color:#414b5e}a{color:var(--blue);font-weight:700}.steps{counter-reset:step;list-style:none;padding:0;margin:18px 0}.steps li{counter-increment:step;position:relative;padding:4px 0 20px 56px;min-height:48px}.steps li:before{content:counter(step);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#eaf5ff;color:var(--blue);font-weight:800}.notice{background:#fff7ed;border:1px solid #fed7aa;border-left:5px solid var(--orange);border-radius:12px;padding:17px 19px;margin:22px 0}.contact{background:#f5f9fd;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:28px}code{background:#eef3f8;border-radius:6px;padding:2px 7px;color:#243b53}footer{text-align:center;color:var(--muted);padding:0 16px 34px;font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">OpenNews AI MVP</p>
+      <h1>User Data Deletion Instructions</h1>
+      <p class="subtitle">How to revoke Facebook access and request deletion of information associated with OpenNews AI MVP.</p>
+      <p class="meta">Effective and last updated: 2 October 2026</p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <h2>Option 1: Remove the app from Facebook</h2>
+      <p>You can revoke the app’s Facebook access directly from your Facebook account. Facebook menu names may vary slightly by device.</p>
+      <ol class="steps">
+        <li>Open Facebook and go to <strong>Settings &amp; privacy → Settings</strong>.</li>
+        <li>Open <strong>Business integrations</strong> or <strong>Apps and websites</strong>.</li>
+        <li>Find <strong>OpenNews AI MVP</strong>.</li>
+        <li>Select it and choose <strong>Remove</strong>, then confirm.</li>
+      </ol>
+      <p>Removing the integration stops future API access. You should also delete the related Page access token from your local OpenNews AI <code>.env</code> file if you operate the MVP yourself.</p>
+
+      <h2>Option 2: Email a deletion request</h2>
+      <p>Send an email to <a href="mailto:mahmudulhasanrobin.official@gmail.com?subject=OpenNews%20AI%20Data%20Deletion%20Request">mahmudulhasanrobin.official@gmail.com</a> with the subject:</p>
+      <p><strong>OpenNews AI Data Deletion Request</strong></p>
+      <p>Include only the following information so the request can be identified:</p>
+      <ul>
+        <li>Your Facebook Page name.</li>
+        <li>Your Facebook Page ID, if available.</li>
+        <li>The email address you want us to use for confirmation.</li>
+      </ul>
+      <div class="notice"><strong>Never email your password, one-time password, App Secret, User Token, or Page Access Token.</strong></div>
+
+      <h2>What will be deleted</h2>
+      <p>After a valid request is verified, we will delete information controlled by the MVP that is associated with the connection, including where applicable:</p>
+      <ul>
+        <li>Saved Facebook Page identifiers and locally stored access tokens.</li>
+        <li>Facebook post identifiers and publishing-history records.</li>
+        <li>Associated local configuration and diagnostic records that are not required for security or legal compliance.</li>
+      </ul>
+
+      <h2>What may require a separate action</h2>
+      <p>Deleting information from OpenNews AI does not automatically delete posts that are already public on Facebook or copies of website content. A Page administrator can delete those posts from the Facebook Page and remove published website files separately.</p>
+
+      <h2>Processing time</h2>
+      <p>We normally acknowledge deletion requests within 7 days and complete valid requests within 30 days. We may retain limited records when required by law, fraud prevention, or security obligations.</p>
+
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mahmudulhasanrobin.official@gmail.com">mahmudulhasanrobin.official@gmail.com</a></p>
+        <p>Privacy Policy: <a href="https://opennews-ai-tanvir.github.io/opennews-ai-demo/privacy.html">View the OpenNews AI Privacy Policy</a></p>
+        <p>Project website: <a href="https://opennews-ai-tanvir.github.io/opennews-ai-demo/">OpenNews AI Demo</a></p>
+      </div>
+    </article>
+  </main>
+  <footer>© 2026 OpenNews AI MVP · Student demonstration project</footer>
+</body>
+</html>
